@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { MenuComponent } from './shared/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule
