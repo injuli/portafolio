@@ -17,7 +17,6 @@ export class PrincipalService {
     .subscribe( (resp: Principal) => {
       this.carga = true;
       this.info = resp;
-      console.log(resp);
     });
   }
 }
