@@ -7,7 +7,7 @@
 
                 <div class="section-header">
 
-                    <h2>My <strong class="color">Education</strong></h2>
+                    <h2>{{ resumeService.desc.education?.titulo }} <strong class="color">{{ resumeService.desc.education?.titulo2 }}</strong></h2>
 
                 </div>
 
@@ -17,16 +17,26 @@
 
                         <div class="timeline-content">
 
-                            <h4>CSS College Larkana</h4>
+                            <h4>{{ resumeService.desc.education?.subtitulo }}</h4>
 
                             <em>
-                  <span>Masters Degree</span>
-                  <span>2013-2016</span>
+                  <span>{{ resumeService.desc.education?.subtituloInfo }}</span>
+                  <span>{{ resumeService.desc.education?.year }}</span>
                 </em>
+                        </div>
 
-                            <p>
-                                Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut.
-                            </p>
+                    </li>
+
+                    <li>
+
+                        <div class="timeline-content">
+
+                            <h4>{{ resumeService.desc.education?.subtitulo2 }}</h4>
+
+                            <em>
+                  <span>{{ resumeService.desc.education?.subtituloInfo2 }}</span>
+                  <span>{{ resumeService.desc.education?.year2 }}</span>
+                </em>
 
                         </div>
 
@@ -36,16 +46,12 @@
 
                         <div class="timeline-content">
 
-                            <h4>CSS College Larkana</h4>
+                            <h4>{{ resumeService.desc.education?.subtitulo3 }}</h4>
 
                             <em>
-                  <span>Masters Degree</span>
-                  <span>2013-2016</span>
+                  <span>{{ resumeService.desc.education?.subtituloInfo3 }}</span>
+                  <span>{{ resumeService.desc.education?.year3 }}</span>
                 </em>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut.
-                            </p>
 
                         </div>
 
@@ -55,22 +61,32 @@
 
                         <div class="timeline-content">
 
-                            <h4>CSS College Larkana</h4>
+                            <h4>{{ resumeService.desc.education?.subtitulo4 }}</h4>
 
                             <em>
-                  <span>Masters Degree</span>
-                  <span>2013-2016</span>
-                </em>
+                      <span>{{ resumeService.desc.education?.subtituloInfo4 }}</span>
+                      <span>{{ resumeService.desc.education?.year4 }}</span>
+                    </em>
 
-                            <p>
-                                Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut.
-                            </p>
 
                         </div>
 
                     </li>
 
+                    <li>
 
+                        <div class="timeline-content">
+
+                            <h4>{{ resumeService.desc.education?.subtitulo5 }}</h4>
+
+                            <em>
+                          <span>{{ resumeService.desc.education?.subtituloInfo5 }}</span>
+                          <span>{{ resumeService.desc.education?.year5 }}</span>
+                        </em>
+
+                        </div>
+
+                    </li>
 
                 </ul>
 
@@ -83,7 +99,7 @@
 
                 <div class="section-header">
 
-                    <h2>My <strong class="color">Experience</strong></h2>
+                    <h2>{{ resumeService.desc.experience?.titulo }} <strong class="color">{{ resumeService.desc.experience?.titulo2 }} </strong></h2>
 
                 </div>
 
@@ -93,15 +109,15 @@
 
                         <div class="timeline-content">
 
-                            <h4>CSS College Larkana</h4>
+                            <h4>{{ resumeService.desc.experience?.info }} </h4>
 
                             <em>
-                  <span>Masters Degree</span>
-                  <span>2013-2016</span>
+                  <span>{{ resumeService.desc.experience?.subtitulo }} </span>
+                  <span>{{ resumeService.desc.experience?.year }} </span>
                 </em>
 
                             <p>
-                                Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut.
+                                {{ resumeService.desc.experience?.descripcion }}
                             </p>
 
                         </div>
@@ -112,184 +128,22 @@
 
                         <div class="timeline-content">
 
-                            <h4>CSS College Larkana</h4>
+                            <h4>{{ resumeService.desc.experience?.info2 }} </h4>
 
                             <em>
-                  <span>Masters Degree</span>
-                  <span>2013-2016</span>
+                  <span>{{ resumeService.desc.experience?.subtitulo2 }} </span>
+                  <span>{{ resumeService.desc.experience?.year2 }} </span>
                 </em>
 
                             <p>
-                                Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut.
+                                {{ resumeService.desc.experience?.descripcion2 }}
                             </p>
 
                         </div>
 
                     </li>
-
-                    <li>
-
-                        <div class="timeline-content">
-
-                            <h4>CSS College Larkana</h4>
-
-                            <em>
-                  <span>Masters Degree</span>
-                  <span>2013-2016</span>
-                </em>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, id electram reprimique his, dicta saepe oporteat eos an, esse erat doming at lam. Nec quodsi suscipiantur an, ad graece nemore ocurreret lam, agam ipsum meliore quo ut.
-                            </p>
-
-                        </div>
-
-                    </li>
-
-
 
                 </ul>
-
-            </div>
-
-        </div>
-        <div class="section-block testimonials-block">
-
-            <div class="container-fluid">
-
-                <div class="section-header">
-
-                    <h2>My <strong class="color">Clients</strong></h2>
-
-                </div>
-
-
-                <div class="testimonials-slider owl-carousel owl-theme owl-loaded">
-
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage" style="transform: translate3d(-674px, 0px, 0px); transition: all 0.5s ease 0s; width: 2022px;">
-                            <div class="owl-item" style="width: 337px; margin-right: 0px;">
-                                <div class="testimonial">
-
-                                    <div class="icon">
-                                        <i class="ion-quote"></i>
-                                    </div>
-
-                                    <p>
-                                        Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum et. Has postulant vul putate eu. Pro justo aliquando prodesset at.
-                                    </p>
-
-                                    <div class="author">
-                                        <h4>Jake Doe</h4>
-                                        <span>CEO at Company</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 337px; margin-right: 0px;">
-                                <div class="testimonial">
-
-                                    <div class="icon">
-                                        <i class="ion-quote"></i>
-                                    </div>
-
-                                    <p>
-                                        Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum et. Has postulant vul putate eu. Pro justo aliquando prodesset at.
-                                    </p>
-
-                                    <div class="author">
-                                        <h4>Jake Doe</h4>
-                                        <span>CEO at Company</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 337px; margin-right: 0px;">
-                                <div class="testimonial">
-
-                                    <div class="icon">
-                                        <i class="ion-quote"></i>
-                                    </div>
-
-                                    <p>
-                                        Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum et. Has postulant vul putate eu. Pro justo aliquando prodesset at.
-                                    </p>
-
-                                    <div class="author">
-                                        <h4>Jake Doe</h4>
-                                        <span>CEO at Company</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 337px; margin-right: 0px;">
-                                <div class="testimonial">
-
-                                    <div class="icon">
-                                        <i class="ion-quote"></i>
-                                    </div>
-
-                                    <p>
-                                        Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum et. Has postulant vul putate eu. Pro justo aliquando prodesset at.
-                                    </p>
-
-                                    <div class="author">
-                                        <h4>Jake Doe</h4>
-                                        <span>CEO at Company</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 337px; margin-right: 0px;">
-                                <div class="testimonial">
-
-                                    <div class="icon">
-                                        <i class="ion-quote"></i>
-                                    </div>
-
-                                    <p>
-                                        Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum et. Has postulant vul putate eu. Pro justo aliquando prodesset at.
-                                    </p>
-
-                                    <div class="author">
-                                        <h4>Jake Doe</h4>
-                                        <span>CEO at Company</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="owl-item" style="width: 337px; margin-right: 0px;">
-                                <div class="testimonial">
-
-                                    <div class="icon">
-                                        <i class="ion-quote"></i>
-                                    </div>
-
-                                    <p>
-                                        Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum et. Has postulant vul putate eu. Pro justo aliquando prodesset at.
-                                    </p>
-
-                                    <div class="author">
-                                        <h4>Jake Doe</h4>
-                                        <span>CEO at Company</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-controls">
-                        <div class="owl-nav">
-                            <div class="owl-prev" style="display: none;">prev</div>
-                            <div class="owl-next" style="display: none;">next</div>
-                        </div>
-                        <div class="owl-dots" style="">
-                            <div class="owl-dot"><span></span></div>
-                            <div class="owl-dot active"><span></span></div>
-                            <div class="owl-dot"><span></span></div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
