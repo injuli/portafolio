@@ -10,20 +10,20 @@
                 <div class='inner'>
                     <div class='intro-text'>
 
-                        <h1>I'm John Doe</h1>
+                        <h1>{{ principalService.info.titulo }}</h1>
 
                         <p>
-                            A Friend, Dude and Buddy From Earth
+                            {{ principalService.info.subtitulo }}
                         </p>
 
                         <div class='intro-btns'>
 
                             <a href='#about' class='btn-custom section-toggle' data-section='about'>
-                            Discover More
+                            {{ principalService.info.descubre }}
                           </a>
 
                             <a href='#contact' class='btn-custom section-toggle' data-section='contact'>
-                            Hire Me
+                            {{ principalService.info.contactar }}
                           </a>
 
                         </div>
