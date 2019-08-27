@@ -1,73 +1,243 @@
 <!--=====================================================
 					About Section
 =====================================================-->
-<div class='sections'>
-    <section id='about' class='section about-section border-d active'>
 
-        <div class="section-block about-block">
-            <div class="container-fluid">
+<section id='about' class='section about-section border-d active'>
+    <div class="page-border border-left"></div>
+    <div class="section-block about-block">
+        <div class="container-fluid">
 
-                <div class="section-header">
-                    <h2>
-                        {{ acercaService.desc.info?.titulo }} <strong class="color">{{ acercaService.desc.info?.titulo2 }}</strong>
-                    </h2>
+            <div class="section-header">
+                <h2>
+                    {{ acercaService.desc.info?.titulo }} <strong class="color">{{ acercaService.desc.info?.titulo2 }}</strong>
+                </h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <ul class="info-list">
+
+                        <li>
+                            <strong>{{ acercaService.desc.info?.nombre }}</strong>
+                            <span>{{ acercaService.desc.info?.desNombre }}</span>
+                        </li>
+
+                        <li>
+                            <strong>{{ acercaService.desc.info?.edad }}</strong>
+                            <span>{{ acercaService.desc.info?.desEdad }}</span>
+                        </li>
+
+                        <li>
+                            <strong>{{ acercaService.desc.info?.residencia }}</strong>
+                            <span>{{ acercaService.desc.info?.desResidencia }}</span>
+                        </li>
+
+                        <li>
+                            <strong>{{ acercaService.desc.info?.ciudadOrigen }}</strong>
+                            <span>{{ acercaService.desc.info?.desCiuOrigen }}</span>
+                        </li>
+
+
+
+                    </ul>
+
                 </div>
 
-                <div class="row">
+                <div class="col-md-8">
 
-                    <div class="col-md-4">
+                    <div class="about-text">
+                        <p>
+                            {{ acercaService.desc.info?.infoMe }}
+                        </p>
 
-                        <ul class="info-list">
-
-                            <li>
-                                <strong>{{ acercaService.desc.info?.nombre }}</strong>
-                                <span>{{ acercaService.desc.info?.desNombre }}</span>
-                            </li>
-
-                            <li>
-                                <strong>{{ acercaService.desc.info?.edad }}</strong>
-                                <span>{{ acercaService.desc.info?.desEdad }}</span>
-                            </li>
-
-                            <li>
-                                <strong>{{ acercaService.desc.info?.residencia }}</strong>
-                                <span>{{ acercaService.desc.info?.desResidencia }}</span>
-                            </li>
-
-                            <li>
-                                <strong>{{ acercaService.desc.info?.ciudadOrigen }}</strong>
-                                <span>{{ acercaService.desc.info?.desCiuOrigen }}</span>
-                            </li>
-
-
-
-                        </ul>
+                        <p>
+                            {{ acercaService.desc.info?.infoMe2}}
+                        </p>
 
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="about-btns">
 
-                        <div class="about-text">
-                            <p>
-                                {{ acercaService.desc.info?.infoMe }}
-                            </p>
-
-                            <p>
-                                {{ acercaService.desc.info?.infoMe2}}
-                            </p>
-
-                        </div>
-
-                        <div class="about-btns">
-
-                            <a href="#" class="btn-custom btn-color">
+                        <a href="#" class="btn-custom btn-color">
                                 {{ acercaService.desc.info?.descargar }}
                             </a>
 
-                            <a href='#contact' class="btn-custom btn-color">
+                        <a href='#contact' class="btn-custom btn-color">
                                 {{ acercaService.desc.info?.contactame }}
                             </a>
 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-block services-block">
+
+        <div class="container-fluid">
+
+            <div class="section-header">
+
+                <h2>{{ acercaService.desc.service?.titulo }} <strong class="color">{{ acercaService.desc.service?.titulo2 }}</strong></h2>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service">
+
+                        <div class="icon">
+                            <i class="icon-basic-keyboard"></i>
+                        </div>
+
+                        <div class="content">
+
+                            <h4>{{ acercaService.desc.service?.subtitulo1 }}</h4>
+
+                            <p>
+                                Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+
+                        <div class="icon">
+                            <i class="ion-social-angular-outline"></i>
+                        </div>
+
+                        <div class="content">
+
+                            <h4>{{ acercaService.desc.service?.subtitulo2 }}</h4>
+
+                            <p>
+                                Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="service">
+
+                        <div class="icon">
+                            <i class="ion-social-javascript-outline"></i>
+                        </div>
+
+                        <div class="content">
+
+                            <h4>{{ acercaService.desc.service?.subtitulo3 }}</h4>
+
+                            <p>
+                                Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="section-block skills-block">
+        <div class="container-fluid">
+
+            <div class="section-header">
+
+                <h2>
+                    {{ acercaService.desc.skills?.titulo }} <strong class="color">{{ acercaService.desc.skills?.titulo2 }}</strong>
+                </h2>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="skill">
+
+                        <h4>{{ acercaService.desc.skills?.skill1 }}</h4>
+
+                        <div class="bar">
+                            <div class="percent" style="width:65%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <h4>{{ acercaService.desc.skills?.skill2 }}</h4>
+
+                        <div class="bar">
+                            <div class="percent" style="width:45%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <h4>{{ acercaService.desc.skills?.skill3 }}</h4>
+
+                        <div class="bar">
+                            <div class="percent" style="width:60%;"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="skill">
+
+                        <h4>{{ acercaService.desc.skills?.skill4 }}</h4>
+
+                        <div class="bar">
+                            <div class="percent" style="width:55%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <h4>{{ acercaService.desc.skills?.skill5 }}</h4>
+
+                        <div class="bar">
+                            <div class="percent" style="width:40%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <h4>{{ acercaService.desc.skills?.skill6 }}</h4>
+
+                        <div class="bar">
+                            <div class="percent" style="width:75%;"></div>
                         </div>
 
                     </div>
@@ -75,181 +245,10 @@
                 </div>
 
             </div>
-        </div>
 
-        <div class="section-block services-block">
-
-            <div class="container-fluid">
-
-                <div class="section-header">
-
-                    <h2>{{ acercaService.desc.service?.titulo }} <strong class="color">{{ acercaService.desc.service?.titulo2 }}</strong></h2>
-
-                </div>
-
-
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="service">
-
-                            <div class="icon">
-                                <i class="icon-basic-keyboard"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <h4>{{ acercaService.desc.service?.subtitulo1 }}</h4>
-
-                                <p>
-                                    Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service">
-
-                            <div class="icon">
-                                <i class="ion-social-angular-outline"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <h4>{{ acercaService.desc.service?.subtitulo2 }}</h4>
-
-                                <p>
-                                    Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4">
-                        <div class="service">
-
-                            <div class="icon">
-                                <i class="ion-social-javascript-outline"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <h4>{{ acercaService.desc.service?.subtitulo3 }}</h4>
-
-                                <p>
-                                    Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
 
         </div>
-
-        <div class="section-block skills-block">
-            <div class="container-fluid">
-
-                <div class="section-header">
-
-                    <h2>
-                        {{ acercaService.desc.skills?.titulo }} <strong class="color">{{ acercaService.desc.skills?.titulo2 }}</strong>
-                    </h2>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-
-                        <div class="skill">
-
-                            <h4>{{ acercaService.desc.skills?.skill1 }}</h4>
-
-                            <div class="bar">
-                                <div class="percent" style="width:65%;"></div>
-                            </div>
-
-                        </div>
+    </div>
 
 
-                        <div class="skill">
-
-                            <h4>{{ acercaService.desc.skills?.skill2 }}</h4>
-
-                            <div class="bar">
-                                <div class="percent" style="width:45%;"></div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="skill">
-
-                            <h4>{{ acercaService.desc.skills?.skill3 }}</h4>
-
-                            <div class="bar">
-                                <div class="percent" style="width:60%;"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-
-                        <div class="skill">
-
-                            <h4>{{ acercaService.desc.skills?.skill4 }}</h4>
-
-                            <div class="bar">
-                                <div class="percent" style="width:55%;"></div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="skill">
-
-                            <h4>{{ acercaService.desc.skills?.skill5 }}</h4>
-
-                            <div class="bar">
-                                <div class="percent" style="width:40%;"></div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="skill">
-
-                            <h4>{{ acercaService.desc.skills?.skill6 }}</h4>
-
-                            <div class="bar">
-                                <div class="percent" style="width:75%;"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-
-
-    </section>
-</div>
+</section>

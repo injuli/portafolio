@@ -1,0 +1,20 @@
+.main-content>.border-right {
+    right: 14px;
+    border-color: #303F9F;
+}
+
+body.border-dark .main-content>.page-border {
+    border-color: #303F9F;
+}
+
+.main-content>.border-top {
+    top: 14px;
+}
+
+.main-content>.border-top,
+.main-content>.border-bottom {
+    border-color: #303F9F;
+    height: 7px;
+    left: 20px;
+    right: 20px;
+}
