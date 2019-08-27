@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Contacto } from '../interfaces/contacto.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
-  desc = {};
+  desc: Contacto = {};
   carga = true;
 
   constructor( private http: HttpClient ) {
@@ -14,7 +15,7 @@ export class ContactService {
 
   private cargarContact() {
     this.http.get('https://portafolio-html-59583.firebaseio.com/contact.json')
-    .subscribe( (resp) => {
+    .subscribe( (resp: Contacto) => {
      this.carga = true;
      this.desc = resp;
    });
