@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AcercaService } from '../../services/acerca.service';
+import { CurriculumService } from '../../services/curriculum.service';
 
 @Component({
   selector: 'app-about',
@@ -8,9 +9,13 @@ import { AcercaService } from '../../services/acerca.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor( public acercaService: AcercaService) { }
+  constructor( public acercaService: AcercaService, public curriculumService: CurriculumService ) { }
 
   ngOnInit() {
+  }
+
+  downCurriculum(){
+    console.log('link');
   }
 
 }
