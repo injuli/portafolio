@@ -8,15 +8,20 @@ import { Principal } from '../interfaces/principal.interface';
 export class PrincipalService {
 
   info: Principal = {};
-  carga = false;
+  carga = true;
 
 
   constructor( private http: HttpClient) {
+
     // Leer archivo JSON
     this.http.get('assets/data/data-pagina.json')
     .subscribe( (resp: Principal) => {
-      this.carga = true;
+      
       this.info = resp;
+
+      setTimeout(() =>{
+        this.carga = false;
+      }, 1000);
     });
   }
 }
