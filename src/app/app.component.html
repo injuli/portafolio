@@ -1,14 +1,5 @@
-<div id='preloader' *ngIf="principalService.carga">
-    <div class='loader'></div>
-    <div class='left'></div>
-    <div class='right'></div>
-</div>
-
-<div class='page-border border-left'>
-</div>
-<div class='page-border border-right'></div>
-<div class='page-border border-top'></div>
-<div class='page-border border-bottom'></div>
+<!--*ngIf="principalService.carga"-->
+<app-desing *ngIf="principalService.carga"></app-desing>
 <app-menu></app-menu>
 
 <div class='animation-block'></div>
