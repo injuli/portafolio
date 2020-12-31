@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../../services/contact.service';
+import {FormControl, Validators, FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,9 +9,26 @@ import { ContactService } from '../../services/contact.service';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(public contactService: ContactService) { }
+  email = new FormControl('', [Validators.required, Validators.email]);
 
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  options: FormGroup;
+  hideRequiredControl = new FormControl(false);
+  floatLabelControl = new FormControl('auto');
+
+  constructor(public contactService: ContactService, fb: FormBuilder) { }
+
+  
   ngOnInit() {
+
+    
   }
 
 }

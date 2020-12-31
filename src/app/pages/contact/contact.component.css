@@ -9,3 +9,8 @@
     background: transparent;
     transition: none;
 }
+
+.mat-form-field,
+.form-group {
+    width: 100%;
+}
