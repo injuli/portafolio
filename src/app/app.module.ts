@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 
+
 import { AppComponent } from './app.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { MenuComponent } from './shared/menu/menu.component';
@@ -18,6 +19,10 @@ import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
+import { MensajeService } from './services/mensaje.service';
+
 
 
 
@@ -45,7 +50,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MensajeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

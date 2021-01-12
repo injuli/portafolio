@@ -17,7 +17,7 @@
                                     <div class="form-group">
                                         <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
                                             <mat-label>Ingrese su nombre</mat-label>
-                                            <input matInput placeholder="{{ contactService.desc.nombre }}">
+                                            <input [(ngModel)]="name" name="contactName" type="text" matInput placeholder="{{ contactService.desc.nombre }}">
                                         </mat-form-field>
                                     </div>
                                 </div>
@@ -27,7 +27,7 @@
                                     <div class="form-group">
                                         <mat-form-field appearance="fill">
                                             <mat-label>Ingrese su correo electrónico</mat-label>
-                                            <input matInput placeholder="{{ contactService.desc.correo }}" [formControl]="email" required>
+                                            <input [(ngModel)]="correo" matInput placeholder="{{ contactService.desc.correo }}" [formControl]="email" required>
                                             <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                                         </mat-form-field>
                                     </div>
@@ -38,7 +38,7 @@
                             <div class="form-group">
                                 <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
                                     <mat-label>Ingrese asunto</mat-label>
-                                    <input matInput placeholder="{{ contactService.desc.asunto }}">
+                                    <input [(ngModel)]="subject" name="contactSubject" type="text" matInput placeholder="{{ contactService.desc.asunto }}">
                                 </mat-form-field>
 
                             </div>
@@ -46,12 +46,12 @@
                             <div class="form-group">
                                 <mat-form-field>
                                     <mat-label>Ingrese el mensaje</mat-label>
-                                    <textarea matInput placeholder="{{ contactService.desc.mensaje }}"></textarea>
+                                    <textarea [(ngModel)]="msj" name="contactMessage" matInput placeholder="{{ contactService.desc.mensaje }}"></textarea>
                                 </mat-form-field>
                             </div>
 
                             <div class="form-group text-center">
-                                <button type="submit" class="btn-custom btn-color disabled" style="pointer-events: all; cursor: pointer;">
+                                <button type="submit" class="btn-custom btn-color disabled" style="pointer-events: all; cursor: pointer;" (click)=" contactForm()">
                   {{ contactService.desc.enviar }}
                 </button>
                             </div>
