@@ -13,6 +13,6 @@ app.post('/contact', function(req, res) {
     configMensaje(req.body);
     res.status(200).send();
 });
-app.listen(3000, () => {
-    console.log('Servidor corriendo');
+app.listen(port, () => {
+    console.log(`Servidor corriendo ${port}`);
 });
