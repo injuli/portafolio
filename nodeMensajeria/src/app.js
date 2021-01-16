@@ -7,12 +7,12 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.post('/contact', function(req, res) {
     configMensaje(req.body);
     res.status(200).send();
 });
-app.listen(port, () => {
+app().listen(port, () => {
     console.log(`Servidor corriendo ${port}`);
 });
