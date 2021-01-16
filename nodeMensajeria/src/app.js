@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('./docs'));
 
