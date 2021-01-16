@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 // Serve only the static files form the dist directory
 app.use(express.static(_dirname + '/dist'));
