@@ -9,10 +9,10 @@ app.use(cors());
 
 const port = process.env.PORT || 8080;
 
-app.use(express.static('./dist/angular-heroku'));
+app.use(express.static('./docs'));
 
-app.get('/*', (req, res) => {
-    res.sendFile('index.html', { root: 'dist/angular-heroku/' });
+app.get('/*', function(req, res) {
+    res.sendFile('index.html', { root: 'docs' });
 });
 
 app.post('/contact', function(req, res) {
