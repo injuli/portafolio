@@ -13,7 +13,7 @@ export class MensajeService {
   sendMessage(body){
     console.log('ingreso al sendmessage mensajeservice');
     console.log('mensae service', body);
-    return this._http.post('http://localhost:3000/contact', body);
+    return this._http.post('http://localhost:8080/contact', body);
     
   }  
 }
