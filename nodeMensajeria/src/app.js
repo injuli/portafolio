@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.post('/contact', function(req, res) {
     configMensaje(req.body);
