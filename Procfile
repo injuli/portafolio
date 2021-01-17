@@ -1,1 +1,1 @@
-web:node ./nodeMensajeria/src/app.js
+web:node nodeMensajeria/src/app.js
