@@ -9,7 +9,8 @@
     },
 
     "engine": {
-        "node": "14.13.0"
+        "node": "14.13.0",
+        "npm": "6.14.8"
     },
     "keywords": [],
     "author": "",
