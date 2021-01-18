@@ -8,20 +8,23 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 8080;
 
 
-// Serve only the static files form the dist directory    
-app.use(express.static(__dirname + '/dist/'));
+const express = require('express');
+const path = require('path');
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/index.html'));
+const app = express();
+
+app.use(express.static(__dirname + '/dist/portafolio'));
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/portafolio/index.html'));
 });
 
 app.post('/contact', function(req, res) {
     configMensaje(req.body);
     res.status(200).send();
 });
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log(`Servidor corriendo ${port}`);
 });
