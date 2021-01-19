@@ -13,7 +13,7 @@ export class MensajeService {
   sendMessage(body){
     console.log('ingreso al sendmessage mensajeservice');
     console.log('mensaje service', body);
-    return this._http.post('http://localhost:%s/contact', body);
+    return this._http.post('https://injuliportafolio.herokuapp.com/contact', body);
     
   }  
 }
