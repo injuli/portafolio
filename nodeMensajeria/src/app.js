@@ -8,13 +8,19 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-let port = process.env.PORT || 8080;
+//Install express server
+
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/portafolio'));
+
+app.get('/*', (req, res) =>
+    res.sendFile('index.html', { root: 'dist/portafolio/' }),
+);
+
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
 
 
-app.use(express.static(__dirname + '/dist/portafolio'));
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/portafolio/index.html'));
-});
 
 app.post('/contact', function(req, res) {
     configMensaje(req.body);
