@@ -21,11 +21,11 @@ app.get('/*', (req, res) =>
 app.listen(process.env.PORT || 8080);
 
 
-
+/*
 app.post('/contact', function(req, res) {
     configMensaje(req.body);
     res.status(200).send();
 });
 app.listen(8080, () => {
     console.log(`Servidor corriendo ${port}`);
-});
+});*/
