@@ -4,7 +4,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const configMensaje = require('./configMensaje');
 const app = express();
-const app2 = express();
 
 app.use(bodyParser.json());
 app.use(cors());
