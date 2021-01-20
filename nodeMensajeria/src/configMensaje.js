@@ -12,7 +12,7 @@ module.exports = (contact) => {
     });
 
     const mailOptions = {
-        from: `"${contact.name} 👻" <${contact.correo}>`,
+        from: `"${contact.name} 🍂 " <${contact.correo}>`,
         to: 'ingrijrm94@gmail.com', // Cambia esta parte por el destinatario
         subject: contact.subject,
         html: `

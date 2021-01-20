@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { MensajeService } from './services/mensaje.service';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -48,7 +49,8 @@ import { MensajeService } from './services/mensaje.service';
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [MensajeService],
   bootstrap: [AppComponent]
