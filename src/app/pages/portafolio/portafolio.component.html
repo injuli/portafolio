@@ -37,17 +37,19 @@
                     </li>
                 </ul>
 
-                <ul class="portfolio-items shuffle" style="overflow: hidden; height: 600px; transition: height 250ms ease-out 0s;">
 
-                    <li data-groups="[&quot;web&quot;,&quot;tech&quot;]" class="shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);">
-                        <div *ngFor="let proyecto of portafolioService.proyectos; let i=index" class="inner">
-                            <img src="{{proyecto['imagenUrl']}}" alt="">
+
+
+                <ul class="portfolio-items shuffle " *ngFor="let proyecto of portafolioService.proyectos ; let i=index">
+                    <li class="col-md-3">
+                        <div class="inner">
+                            <img src="{{proyecto['imagenUrl']}}">
 
                             <div class="overlay">
 
                                 <a href="#popup-1" class="view-project">
-                                    Ver Proyecto
-                                </a>
+                                            Ver Proyecto
+                                        </a>
 
                                 <!--project popup-->
                                 <div id="popup-1" class="popup-box zoom-anim-dialog mfp-hide">
@@ -77,6 +79,10 @@
                     </li>
 
                 </ul>
+
+
+
+
 
             </div>
         </div>

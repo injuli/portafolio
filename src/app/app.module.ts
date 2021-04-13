@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import {MatGridListModule} from '@angular/material/grid-list';
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 
@@ -50,7 +50,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatGridListModule
+
   ],
   providers: [MensajeService],
   bootstrap: [AppComponent]

@@ -33,6 +33,10 @@
 	General Styles
 =======================================================*/
 
+.mat-grid-tile {
+    display: contents;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
 body,
 html {
