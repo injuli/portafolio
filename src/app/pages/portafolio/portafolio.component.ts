@@ -11,7 +11,7 @@ import { Portafolio } from '../../interfaces/portafolio.interface';
 export class PortafolioComponent {
 
   constructor(public portafolioService: PortafolioService, public dialog: MatDialog) { }
-  openDialog(data: string) {
+  openDialog(data: Portafolio) {
 
     this.dialog.open(DialogElementsExampleDialog, {
       data

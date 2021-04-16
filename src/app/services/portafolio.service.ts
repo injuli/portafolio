@@ -8,7 +8,7 @@ import { Portafolio } from '../interfaces/portafolio.interface';
 })
 export class PortafolioService {
   desc: Portafolio = {};
-  proyectos: any[] = [];
+  proyectos: Portafolio[] = [];
 
   constructor(private http: HttpClient) {
 
@@ -19,7 +19,7 @@ export class PortafolioService {
 
      cargarProyecto() {
       this.http.get('https://portafolio-html-59583.firebaseio.com/infportfolio.json')
-      .subscribe( (resp: any[]) => {
+      .subscribe( (resp: Portafolio[]) => {
         this.proyectos = resp;
 
      });
