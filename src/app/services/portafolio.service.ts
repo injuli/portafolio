@@ -1,20 +1,27 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Portafolio } from '../interfaces/portafolio.interface';
+import { Portafolio, InfoPortafolio } from '../interfaces/portafolio.interface';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PortafolioService {
-  desc: Portafolio = {};
   proyectos: any[] = [];
+  desc: any = {};
 
   constructor(private http: HttpClient) {
-
+    this.infoProyecto();
     this.cargarProyecto();
    }
 
+   infoProyecto() {
+    this.http.get('https://portafolio-html-59583.firebaseio.com/portfolio.json')
+    .subscribe ((inf: InfoPortafolio) => {
+      this.desc  = inf;
+      console.log(inf);
+    });
+   }
 
 
      cargarProyecto() {

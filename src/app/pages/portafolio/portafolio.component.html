@@ -11,28 +11,23 @@
 
 
                 <div class="section-header">
-                    <h2>My <strong class="color">titulo</strong></h2>
+                    <h2>{{portafolioService.desc.datos.titulo | slice:0:3}} <strong class="color">{{portafolioService.desc.datos.titulo | slice:3}}</strong></h2>
                 </div>
 
                 <ul class="portfolio-filters">
                     <li>
                         <a href="#" class="active" data-group="all">
-                            All
+                            {{portafolioService.desc.datos.sub1}}
                         </a>
                     </li>
                     <li>
                         <a href="#" data-group="web" class="">
-                            Web
+                            {{portafolioService.desc.datos.sub2}}
                         </a>
                     </li>
                     <li>
                         <a href="#" data-group="tech" class="">
-                            Tech
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-group="photography" class="">
-                            Photography
+                            {{portafolioService.desc.datos.sub3}}
                         </a>
                     </li>
                 </ul>

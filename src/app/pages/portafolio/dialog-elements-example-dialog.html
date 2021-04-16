@@ -1,11 +1,14 @@
-<figure>
+<div class="popup-box zoom-anim-dialog">
+    <button mat-icon-button class="close-button" [mat-dialog-close]="true" (click)="onNoClick()">
+        <mat-icon svgIcon="window-close" class="window-close" color="warn">X</mat-icon>
+      </button>
+    <figure>
 
-    <!--project popup image-->
-    <img src='{{data?.imagenUrl}}' width="90%" height="45%" alt>
+        <!--project popup image-->
+        <img src='{{data?.imagenUrl}}' width="100%" height="45%" alt>
 
-</figure>
-<h1 mat-dialog-title>{{data?.nombre}}</h1>
-<div mat-dialog-content>{{data?.informacion}} <a href="{{data?.enlace}}">(ver)</a></div>
-<div mat-dialog-actions>
-    <button mat-button mat-dialog-close>Close</button>
+    </figure>
+    <h3 mat-dialog-title>{{data?.nombre}}</h3>
+    <div mat-dialog-content>{{data?.informacion}} <a href="{{data?.enlace}}">(ver)</a></div>
+
 </div>

@@ -26,7 +26,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCommonModule } from '@angular/material/core';
-
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -58,7 +58,8 @@ import { MatCommonModule } from '@angular/material/core';
     MatButtonModule,
     MatCommonModule,
     MatDialogModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatIconModule
 
 
   ],

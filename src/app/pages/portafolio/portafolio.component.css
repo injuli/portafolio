@@ -33,6 +33,34 @@
 	General Styles
 =======================================================*/
 
+.close-button {
+    float: left;
+    top: -24px;
+    right: -24px;
+}
+
+.close-icon {
+    transition: 1s ease-in-out;
+}
+
+.close-icon:hover {
+    transform: rotate(180deg);
+}
+
+ ::ng-deep .icon-outside .close-button {
+    float: left;
+    top: -52px;
+    right: -52px;
+}
+
+ ::ng-deep .icon-outside .mat-dialog-container {
+    overflow: unset
+}
+
+.cdk-overlay-dark-backdrop {
+    background: #303f9f !important;
+}
+
 .mat-grid-tile {
     display: contents;
 }
