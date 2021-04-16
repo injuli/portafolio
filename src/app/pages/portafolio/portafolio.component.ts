@@ -11,7 +11,7 @@ import { Portafolio } from '../../interfaces/portafolio.interface';
 export class PortafolioComponent {
 
   constructor(public portafolioService: PortafolioService, public dialog: MatDialog) { }
-  openDialog(data: Portafolio) {
+  openDialog(data: any) {
 
     this.dialog.open(DialogElementsExampleDialog, {
       data
@@ -19,14 +19,16 @@ export class PortafolioComponent {
   }
 
 }
+
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'dialog-elements-example-dialog',
   templateUrl: 'dialog-elements-example-dialog.html',
 })
+
 // tslint:disable-next-line:component-class-suffix
 export class DialogElementsExampleDialog {
-  constructor(@Inject (MAT_DIALOG_DATA) public data: Portafolio) {
+  constructor(@Inject (MAT_DIALOG_DATA) public data: any) {
     console.log(data);
 
   }
