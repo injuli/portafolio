@@ -33,6 +33,10 @@
 	General Styles
 =======================================================*/
 
+.cdk-overlay-dark-backdrop {
+    background: #303f9fe6;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
 body,
 html {
@@ -45,6 +49,16 @@ body {
     overflow: hidden;
     font-family: Lora, serif;
     background: #F0F0F0 !important;
+}
+
+body.main-content>.page-border2 {
+    position: absolute;
+    border: solid 1px #FFF;
+    border-color: rgba(255, 255, 255, .4);
+    z-index: 999;
+    -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
 }
 
 * {
@@ -165,10 +179,20 @@ body.border-dark .menu-btn>.lines>span {
     color: #FFF;
 }
 
+.main-content>.page-border2 {
+    position: absolute;
+    border: solid 1px #FFF;
+    border-color: rgba(255, 255, 255, .4);
+    z-index: 999;
+    -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+}
+
 .main-content>.page-border {
     position: absolute;
-    border: solid 1px #303f9f;
-    border-color: #303f9f;
+    border: solid 1px #FFF;
+    border-color: rgba(134, 108, 248, 0.466);
     z-index: 999;
     -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
     -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
