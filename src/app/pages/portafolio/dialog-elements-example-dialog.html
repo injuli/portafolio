@@ -1,11 +1,11 @@
-<h1 mat-dialog-title>Dialog with elements</h1>
 <figure>
 
     <!--project popup image-->
-    <img src='{{data.imagenUrl}}' alt>
+    <img src='{{data.imagenUrl}}' width="90%" height="45%" alt>
 
 </figure>
-<div mat-dialog-content>hola</div>
+<h1 mat-dialog-title>{{data.nombre}}</h1>
+<div mat-dialog-content>{{data.informacion}} <a href="{{data.enlace}}">(ver)</a></div>
 <div mat-dialog-actions>
     <button mat-button mat-dialog-close>Close</button>
 </div>
