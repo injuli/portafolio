@@ -189,11 +189,11 @@ body.border-dark .menu-btn>.lines>span {
     color: #FFF;
 }
 
-.main-content>.page-border {
+#main-content>.page-border {
     position: absolute;
-    border: solid 1px #FFF;
-    border-color: rgba(255, 255, 255, .4);
-    z-index: 999;
+    border: solid 1px rgb(34, 22, 141) !important;
+    border-color: rgba(59, 47, 231, 0.4) !important;
+    z-index: 999 !important;
     -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
     -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
     transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);

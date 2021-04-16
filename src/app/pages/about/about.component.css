@@ -1,3 +1,11 @@
+#main-content>#page-border {
+    position: absolute;
+    border: solid 1px rgb(33, 21, 77) !important;
+    border-color: #303f9f !important;
+    z-index: 1000;
+    transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+}
+
 .anime {
     position: absolute;
     top: 0;
