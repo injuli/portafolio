@@ -23,7 +23,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MensajeService } from './services/mensaje.service';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCommonModule } from '@angular/material/core';
 
 
 
@@ -51,7 +53,13 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatInputModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatCommonModule,
+    MatDialogModule,
+    MatFormFieldModule
+
 
   ],
   providers: [MensajeService],
