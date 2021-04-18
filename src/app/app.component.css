@@ -303,6 +303,7 @@ body.border-dark .main-content:after {
 }
 
 .intro-text>h1 {
+    z-index: 999;
     margin: 0;
     color: #FFF;
     text-transform: uppercase;
@@ -1618,4 +1619,9 @@ body.loaded #preloader .loader {
         padding: 40px;
         padding-top: 0;
     }
+}
+
+#tsparticles {
+    position: relative;
+    z-index: 100;
 }

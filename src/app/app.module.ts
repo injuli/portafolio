@@ -27,7 +27,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCommonModule } from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
-
+import {NgParticlesModule} from 'ng-particles';
 
 
 @NgModule({
@@ -46,6 +46,7 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgParticlesModule,
     BrowserAnimationsModule,
     MatSliderModule,
     MatFormFieldModule,

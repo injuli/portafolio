@@ -1,4 +1,7 @@
 <!--*ngIf="principalService.carga"-->
+<ng-particles *ngIf="principalService.carga" id="tsparticles" [options]="particlesOptions">
+
+</ng-particles>
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
 <app-desing *ngIf="principalService.carga"></app-desing>
 
