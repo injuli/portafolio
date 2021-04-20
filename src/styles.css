@@ -322,6 +322,8 @@ body.border-dark .main-content:after {
 }
 
 .intro-text {
+    position: relative;
+    z-index: 999;
     padding: 20px;
     text-align: center;
 }
@@ -347,6 +349,7 @@ body.border-dark .main-content:after {
 }
 
 .intro-text>.intro-btns {
+    z-index: 999;
     margin-top: 45px;
 }
 
@@ -591,11 +594,13 @@ body.section-switching.up .animation-block {
 }
 
 .section-main {
+    z-index: 999;
     padding: 0;
 }
 
 .section-main,
 .section-main>.container-fluid {
+    z-index: 999;
     height: 100%;
     width: 100%;
 }

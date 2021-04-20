@@ -298,6 +298,8 @@ body.border-dark .main-content:after {
 }
 
 .intro-text {
+    position: relative;
+    z-index: 999;
     padding: 20px;
     text-align: center;
 }
@@ -573,11 +575,14 @@ body.section-switching.up .animation-block {
 
 .section-main,
 .section-main>.container-fluid {
+    z-index: 999 i !important;
     height: 100%;
     width: 100%;
 }
 
 .v-align {
+    position: relative;
+    z-index: 1000;
     display: table;
     height: 100%;
     width: 100%;
@@ -1619,9 +1624,4 @@ body.loaded #preloader .loader {
         padding: 40px;
         padding-top: 0;
     }
-}
-
-#tsparticles {
-    position: relative;
-    z-index: 100;
 }
