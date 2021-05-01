@@ -17,19 +17,12 @@ export class PortafolioService {
 
    infoProyecto() {
     this.http.get('https://portafolio-html-59583.firebaseio.com/portfolio.json')
-    .subscribe ((inf: InfoPortafolio) => {
-      this.desc  = inf;
-      console.log(inf);
-    });
+    .subscribe ((inf: InfoPortafolio) => this.desc  = inf);
    }
-
 
      cargarProyecto() {
       this.http.get('https://portafolio-html-59583.firebaseio.com/infportfolio.json')
-      .subscribe( (resp: any[]) => {
-        this.proyectos = resp;
-
-     });
+      .subscribe( (resp: any[]) => this.proyectos = resp);
     }
 
    }

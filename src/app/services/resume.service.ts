@@ -1,23 +1,40 @@
 import { Injectable } from '@angular/core';
 
-import { Curriculo } from '../interfaces/curriculo.interface';
 import { HttpClient } from '@angular/common/http';
+import { Education, Experiencia, Resume } from '../interfaces/curriculo.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ResumeService {
-  desc: Curriculo = {};
+
+  education: Education[] = [];
+  experiencia: Experiencia[] = [];
+  desc: Resume = {};
   carga = true;
   constructor( private http: HttpClient) {
-    this.cargarResume();
+    this.infoEducation();
+    this.infoExperience();
+    this.infoTitle();
+
    }
 
-   private cargarResume() {
-    this.http.get('https://portafolio-html-59583.firebaseio.com/resume.json')
-    .subscribe( (resp: Curriculo) => {
-     this.carga = true;
-     this.desc = resp;
-   });
+   infoEducation() {
+     this.http.get('https://portafolio-html-59583.firebaseio.com/education.json')
+     .subscribe((dataEducation: Education[]) => this.education = dataEducation);
+
    }
+
+   infoExperience() {
+     this.http.get('https://portafolio-html-59583.firebaseio.com/experiencia.json')
+     .subscribe((dataExperience: Experiencia[]) => this.experiencia = dataExperience);
+
+   }
+
+   infoTitle(){
+     this.http.get('https://portafolio-html-59583.firebaseio.com/resume.json')
+     .subscribe((dataTitle: Resume) => this.desc = dataTitle);
+   }
+
+
 }

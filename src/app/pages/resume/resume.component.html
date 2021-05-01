@@ -10,87 +10,20 @@
 
                 <div class="section-header">
 
-                    <h2>{{ resumeService.desc.education?.titulo }} <strong class="color">{{ resumeService.desc.education?.titulo2 }}</strong></h2>
+                    <h2>{{resumeService.desc.title1 | slice:0:3}}<strong class="color">{{resumeService.desc.title1 | slice:3}}</strong></h2>
 
                 </div>
 
-                <ul class="timeline">
-
+                <ul class="timeline" *ngFor="let item of resumeService.education">
                     <li>
-
                         <div class="timeline-content">
-
-                            <h4>{{ resumeService.desc.education?.subtitulo }}</h4>
-
+                            <h4>{{ item.estudio}}</h4>
                             <em>
-                  <span>{{ resumeService.desc.education?.subtituloInfo }}</span>
-                  <span>{{ resumeService.desc.education?.year }}</span>
+                  <span>{{item.titulo}}</span>
+                  <span>{{item.year}}, {{item.lugar}}</span>
                 </em>
                         </div>
-
                     </li>
-
-                    <li>
-
-                        <div class="timeline-content">
-
-                            <h4>{{ resumeService.desc.education?.subtitulo2 }}</h4>
-
-                            <em>
-                  <span>{{ resumeService.desc.education?.subtituloInfo2 }}</span>
-                  <span>{{ resumeService.desc.education?.year2 }}</span>
-                </em>
-
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="timeline-content">
-
-                            <h4>{{ resumeService.desc.education?.subtitulo3 }}</h4>
-
-                            <em>
-                  <span>{{ resumeService.desc.education?.subtituloInfo3 }}</span>
-                  <span>{{ resumeService.desc.education?.year3 }}</span>
-                </em>
-
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="timeline-content">
-
-                            <h4>{{ resumeService.desc.education?.subtitulo4 }}</h4>
-
-                            <em>
-                      <span>{{ resumeService.desc.education?.subtituloInfo4 }}</span>
-                      <span>{{ resumeService.desc.education?.year4 }}</span>
-                    </em>
-
-
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="timeline-content">
-
-                            <h4>{{ resumeService.desc.education?.subtitulo5 }}</h4>
-
-                            <em>
-                          <span>{{ resumeService.desc.education?.subtituloInfo5 }}</span>
-                          <span>{{ resumeService.desc.education?.year5 }}</span>
-                        </em>
-
-                        </div>
-
-                    </li>
-
                 </ul>
 
             </div>
@@ -102,44 +35,25 @@
 
                 <div class="section-header">
 
-                    <h2>{{ resumeService.desc.experience?.titulo }} <strong class="color">{{ resumeService.desc.experience?.titulo2 }} </strong></h2>
+                    <h2>{{resumeService.desc.title2 | slice:0:3}} <strong class="color">{{resumeService.desc.title2 | slice:3}}</strong></h2>
 
                 </div>
 
-                <ul class="timeline">
+                <ul class="timeline" *ngFor="let item of resumeService.experiencia">
 
                     <li>
 
                         <div class="timeline-content">
 
-                            <h4>{{ resumeService.desc.experience?.info }} </h4>
+                            <h4>{{item.empresa}} </h4>
 
                             <em>
-                  <span>{{ resumeService.desc.experience?.subtitulo }} </span>
-                  <span>{{ resumeService.desc.experience?.year }} </span>
+                  <span>{{item.funcion}} </span>
+                  <span>{{item.year}}</span>
                 </em>
 
                             <p>
-                                {{ resumeService.desc.experience?.descripcion }}
-                            </p>
-
-                        </div>
-
-                    </li>
-
-                    <li>
-
-                        <div class="timeline-content">
-
-                            <h4>{{ resumeService.desc.experience?.info2 }} </h4>
-
-                            <em>
-                  <span>{{ resumeService.desc.experience?.subtitulo2 }} </span>
-                  <span>{{ resumeService.desc.experience?.year2 }} </span>
-                </em>
-
-                            <p>
-                                {{ resumeService.desc.experience?.descripcion2 }}
+                                {{item.informacion}}
                             </p>
 
                         </div>
@@ -150,6 +64,6 @@
 
             </div>
 
-        </div>
+        </div> -->
     </section>
 </div>
