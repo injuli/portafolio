@@ -1,0 +1,14 @@
+<div class="popup-box zoom-anim-dialog">
+    <button mat-icon-button class="mfp-close" (click)="onNoClick()" type="button">
+        x
+      </button>
+    <figure>
+
+        <!--project popup image-->
+        <img src='{{data?.imagenUrl}}' width="100%" height="45%" alt>
+
+    </figure>
+    <h3 mat-dialog-title>{{data?.nombre}}</h3>
+    <div mat-dialog-content>{{data?.informacion}} <a href="{{data?.enlace}}">(ver)</a></div>
+
+</div>

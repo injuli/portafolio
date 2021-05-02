@@ -8,7 +8,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 
-
+// componentes
 import { AppComponent } from './app.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { MenuComponent } from './shared/menu/menu.component';
@@ -17,10 +17,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { TarjetaComponent } from './pages/tarjeta/tarjeta.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
+// servicios
 import { MensajeService } from './services/mensaje.service';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -40,7 +41,7 @@ import {NgParticlesModule} from 'ng-particles';
     ResumeComponent,
     ContactComponent,
     DesingComponent,
-
+    TarjetaComponent
   ],
   imports: [
     BrowserModule,

@@ -1359,8 +1359,13 @@ body.section-switching.up .animation-block {
     border-radius: 0;
     padding: 17px;
     border: solid 1px;
-    color: #FFF;
-    background: transparent;
+    color: rgb(54, 96, 124);
+    background: rgb(59, 136, 187);
+}
+
+.alert.alert-info {
+    border-color: #1970d3;
+    color: #5a95ec;
 }
 
 .alert.alert-success {

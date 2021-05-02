@@ -1,0 +1,8 @@
+.alert {
+    border-radius: 0;
+    padding: 17px;
+    transform: rotate( -3deg);
+    border: solid 1px;
+    color: #337ab7;
+    background: #337ab796;
+}

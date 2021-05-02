@@ -1,26 +1,20 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { PortafolioService } from '../../services/portafolio.service';
+import { Component, OnInit, Inject, Output, Input, EventEmitter } from '@angular/core';
+import { PortafolioService } from 'src/app/services/portafolio.service';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { Portafolio } from '../../interfaces/portafolio.interface';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-portafolio',
-  templateUrl: './portafolio.component.html',
-  styleUrls: ['./portafolio.component.css']
+  selector: 'app-tarjeta',
+  templateUrl: './tarjeta.component.html',
+  styleUrls: ['./tarjeta.component.css']
 })
-export class PortafolioComponent {
+export class TarjetaComponent {
 
   datos: string;
+  @Output() proyectoSeleccionado: EventEmitter<boolean>;
+  mostrar: boolean | any;
 
-  constructor(public portafolioService: PortafolioService,
-              public dialog: MatDialog,
-              private router: ActivatedRoute) {
-   this.portafolioService.cargarProyecto('Todo');
-   }
+  constructor(public portafolioService: PortafolioService, public dialog: MatDialog) { 
 
-  buscar(termino: string){
-   this.portafolioService.cargarProyecto(termino);
   }
 
   openDialog(data: any) {
