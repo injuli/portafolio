@@ -12,14 +12,48 @@ import { ActivatedRoute } from '@angular/router';
 export class PortafolioComponent {
 
   datos: string;
+  primero: any;
+  segundo: any;
+  tercero: any;
+
+  propiedades: any = {
+    primero: true,
+    segundo: true,
+    tercero: true
+
+  };
 
   constructor(public portafolioService: PortafolioService,
               public dialog: MatDialog,
               private router: ActivatedRoute) {
    this.portafolioService.cargarProyecto('Todo');
+   this.router.params.subscribe(params => {
+     console.log('ruta padre');
+     console.log(params);
+   });
    }
 
   buscar(termino: string){
+    if(termino === 'Todo'){
+      this.propiedades.primero = !this.propiedades.primero
+      this.propiedades.primero = false;
+      this.propiedades.segundo = true;
+      this.propiedades.tercero = true;
+
+    }
+    if(termino === 'Angular' ){
+      this.propiedades.segundo = !this.propiedades.segundo
+      this.propiedades.primero = true;
+      this.propiedades.segundo = false;
+      this.propiedades.tercero = true;
+
+    } if(termino === 'Ionic' ) {
+      this.propiedades.tercero = !this.propiedades.tercero;
+      this.propiedades.primero = true;
+      this.propiedades.segundo = true;
+      this.propiedades.tercero = false;
+    }
+
    this.portafolioService.cargarProyecto(termino);
   }
 

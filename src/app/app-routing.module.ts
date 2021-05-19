@@ -6,6 +6,7 @@ import { ResumeComponent } from './pages/resume/resume.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
+
 const app_routes: Routes = [
     { path: '', component: HomeComponent},
     { path: 'about', component: AboutComponent},

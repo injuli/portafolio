@@ -16,17 +16,17 @@
 
                 <ul class="portfolio-filters">
                     <li>
-                        <a (click)="buscar(portafolioService.desc.sub1)" data-group="all">
+                        <a (click)="buscar(portafolioService.desc.sub1)" [ngClass]="{'texto1': propiedades.primero, 'active': !propiedades.primero}">
                             {{portafolioService.desc.sub1}}
                         </a>
                     </li>
                     <li>
-                        <a (click)="buscar(portafolioService.desc.sub2)" data-group="web">
+                        <a (click)="buscar(portafolioService.desc.sub2)" [ngClass]="{'texto1': propiedades.segundo, 'active': !propiedades.segundo}">
                             {{portafolioService.desc.sub2}}
                         </a>
                     </li>
                     <li>
-                        <a (click)="buscar(portafolioService.desc.sub3)" data-group="tech">
+                        <a (click)="buscar(portafolioService.desc.sub3)" [ngClass]="{'texto1': propiedades.tercero, 'active': !propiedades.tercero}">
                             {{portafolioService.desc.sub3}}
                         </a>
                     </li>
