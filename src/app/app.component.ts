@@ -40,7 +40,7 @@ export class AppComponent {
                 distance: 400,
                 duration: 2,
                 opacity: 0.8,
-                size: 40
+                size: 3
             },
             push: {
                 quantity: 4
@@ -56,25 +56,36 @@ export class AppComponent {
     },
     particles: {
         color: {
-            value: '#ffffff'
+            value: '#2F3E87'
         },
         links: {
-            color: '#ffffff',
+            color: '#030c3a',
             distance: 150,
             enable: true,
             opacity: 0.5,
-            width: 1
+            width: 1,
+      triangles: {
+        enable: true,
+        color: '#7EAFDE',
+        opacity: 0.1
+      }
         },
         collisions: {
             enable: true
         },
         move: {
-            direction: 'none',
             enable: true,
-            outMode: 'bounce',
+            speed: 5,
+            direction: 'none',
             random: false,
-            speed: 6,
-            straight: false
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200
+            }
         },
         number: {
             density: {
@@ -87,7 +98,10 @@ export class AppComponent {
             value: 0.5
         },
         shape: {
-            type: 'circle'
+            type: 'triangle',
+            stroke: {
+              width: 0,
+              color: '#000000'}
         },
         size: {
             random: true,
