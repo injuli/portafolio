@@ -192,7 +192,7 @@ body.border-dark .menu-btn>.lines>span {
 .main-content>.page-border {
     position: absolute;
     border: solid 1px #FFF;
-    border-color: rgba(134, 108, 248, 0.466);
+    border-color: rgb(36, 39, 65);
     z-index: 999;
     -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
     -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
@@ -200,7 +200,7 @@ body.border-dark .menu-btn>.lines>span {
 }
 
 body.border-dark .main-content>.page-border {
-    border-color: #303F9F;
+    border-color: #dadbe2;
 }
 
 .main-content>.border-top,

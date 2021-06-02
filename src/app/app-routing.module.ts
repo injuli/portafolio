@@ -8,12 +8,12 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 
 const app_routes: Routes = [
-    { path: '', component: HomeComponent},
+    { path: 'home', component: HomeComponent},
     { path: 'about', component: AboutComponent},
     { path: 'resume', component: ResumeComponent},
     { path: 'portfolio', component: PortafolioComponent},
     { path: 'contact', component: ContactComponent},
-    { path: '**', pathMatch: 'full', redirectTo: ''}
+    { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({

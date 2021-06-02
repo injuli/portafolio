@@ -1,14 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { PrincipalService } from '../../services/principal.service';
 import { Container, Main } from 'tsparticles';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
+    ruta: string;
+    first: any;
+    second: any;
+
   id = 'tsparticles';
-  constructor( public principalService: PrincipalService ) { }
+  constructor( public principalService: PrincipalService,
+               private router: ActivatedRoute ) {
+                   this.router.url.subscribe(ruta => {
+                       console.log(ruta[0].path);
+                       this.ruta = ruta[0].path;
+                   });
+                   this.lineaColor();
+                }
 
   particlesOptions = {
     background: {
@@ -16,12 +28,12 @@ export class HomeComponent  {
             value: 'none'
         }
     },
-    fpsLimit: 60,
+    fpsLimit: 20,
     interactivity: {
         detectsOn: 'canvas',
         events: {
             onClick: {
-                enable: true,
+                enable: false,
                 mode: 'push'
             },
             onHover: {
@@ -87,7 +99,7 @@ export class HomeComponent  {
                 enable: true,
                 value_area: 800
             },
-            value: 80
+            value: 55
         },
         opacity: {
             value: 0.5
@@ -114,6 +126,10 @@ particlesInit(main: Main): void {
     console.log(main);
 
     // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+}
+
+lineaColor(){
+    
 }
 
 }

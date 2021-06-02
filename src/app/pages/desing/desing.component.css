@@ -2,6 +2,26 @@
 	Preloader
 =======================================================*/
 
+.main-content>.border1 {
+    position: absolute;
+    border: solid 1px #FFF;
+    border-color: rgb(53, 69, 206);
+    z-index: 999;
+    -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+}
+
+.main-content>.border2 {
+    position: absolute;
+    border: solid 1px #FFF;
+    border-color: rgba(253, 253, 253, 0.973);
+    z-index: 999;
+    -webkit-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    -moz-transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+    transition: border-color 2.5s cubic-bezier(.785, .135, .15, .86);
+}
+
 #preloader {
     position: fixed;
     top: 0;
