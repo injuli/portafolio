@@ -20,7 +20,8 @@
                         "tsConfig": "src/tsconfig.app.json",
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets"
+                            "src/assets",
+                            "src/manifest.webmanifest"
                         ],
                         "styles": [
                             "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -38,7 +39,9 @@
                             "src/assets/js/owl.carousel.min.js",
                             "src/assets/js/jquery.magnific-popup.min.js",
                             "src/assets/js/validator.min.js"
-                        ]
+                        ],
+                        "serviceWorker": true,
+                        "ngswConfigPath": "ngsw-config.json"
                     },
                     "configurations": {
                         "production": {
@@ -89,7 +92,8 @@
                         "scripts": [],
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets"
+                            "src/assets",
+                            "src/manifest.webmanifest"
                         ]
                     }
                 },
