@@ -6,3 +6,9 @@
     color: #337ab7;
     background: #337ab796;
 }
+
+img{
+    object-fit: contain;
+    width: 507px;
+    height: 200px;
+}
