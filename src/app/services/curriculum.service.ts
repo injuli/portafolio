@@ -12,11 +12,11 @@ export class CurriculumService {
    }
 
    private cargarPdf(){
-     this.http.get('gs://portafolio-html-59583.appspot.com/Documento/cv IngridRuiz (1).pdf')
+     this.http.get('gs://portafolio-html-59583.appspot.com/Documento/CV Ingrid Ruiz Desarrolladora Frontend.pdf')
      .subscribe(resp => {
        this.carga =true;
         console.log('resp', resp);
-     }); 
+     });
 
    }
 }
