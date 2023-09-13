@@ -26,6 +26,7 @@
                         "styles": [
                             "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
                             "src/assets/css/style.css",
+                            "src/assets/bootstrap/css/bootstrap.css",
                             "src/assets/css/linea.css",
                             "src/assets/css/ionicons.min.css",
                             "src/assets/css/magnific-popup.css"
@@ -34,7 +35,7 @@
                         "scripts": [
                             "src/assets/js/script.js",
                             "src/assets/js/jquery.min.js",
-                            "src/assets/bootstrap/js/bootstrap.js",
+                            "src/assets/bootstrap/js/bootstrap.bundle.js",
                             "src/assets/js/jquery.shuffle.min.js",
                             "src/assets/js/owl.carousel.min.js",
                             "src/assets/js/jquery.magnific-popup.min.js",
