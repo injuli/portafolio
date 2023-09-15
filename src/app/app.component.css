@@ -1,29 +1,29 @@
 /*=======================================================
-	
+
 	Item	: 	N5 - Minimal Resume/CV & vCard Template
-	
+
 	Author	: 	Noman Ali Samejo
-	
+
 --------------------------------------------------------------------------------------
 	List Of Contents
 --------------------------------------------------------------------------------------
-	
+
 	01. General Styles
-	
+
 	02. Menu
-	
+
 	03. Section Styles
-	
+
 	04. Main Section
-	
+
 	05. About Section
-	
+
 	06. Resume Section
-	
+
 	07. Portfolio Section
-	
+
 	08. Contact Section
-	
+
 	09. Responsive CSS
 
 =========================================================*/
@@ -341,7 +341,7 @@ body.border-dark .main-content:after {
 }
 
 a.btn-custom {
-    color: #FFF;
+    color: #FFF !important;
     text-decoration: none;
 }
 
@@ -354,8 +354,8 @@ a.btn-custom {
     font-size: 11px;
     font-weight: 400;
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    /* *display: inline;
+    *zoom: 1; */
     line-height: 1em;
     padding: 17px 32px;
     position: relative;
@@ -869,8 +869,8 @@ body.section-switching.up .animation-block {
 
 .p-table>.header>.price>* {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    /* *display: inline;
+    *zoom: 1; */
     position: relative;
 }
 
@@ -1022,8 +1022,8 @@ body.section-switching.up .animation-block {
 
 .testimonials-slider .owl-controls .owl-dot {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    /* *display: inline;
+    *zoom: 1; */
     padding: 15px 0;
     margin: -15px 0;
     margin-right: 3px;
@@ -1066,8 +1066,8 @@ body.section-switching.up .animation-block {
 
 .portfolio-filters>li {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    /* *display: inline;
+    *zoom: 1; */
     margin-right: 25px;
 }
 
@@ -1118,6 +1118,7 @@ body.section-switching.up .animation-block {
     right: -10px;
     left: -10px;
     background: #303F9F;
+    inset: 0 24%;
     opacity: .9;
     -webkit-transform: rotate(0deg) scale(0);
     -moz-transform: rotate(0deg) scale(0);

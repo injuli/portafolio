@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PrincipalService } from '../../services/principal.service';
 import { Container, Main } from 'tsparticles';
 import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,7 +20,7 @@ export class HomeComponent  {
                        console.log(ruta[0].path);
                        this.ruta = ruta[0].path;
                    });
-                   this.lineaColor();
+                  //  this.lineaColor();
                 }
 
   particlesOptions = {
@@ -97,7 +98,7 @@ export class HomeComponent  {
         number: {
             density: {
                 enable: true,
-                value_area: 800
+                value_area: 840
             },
             value: 55
         },
@@ -128,8 +129,8 @@ particlesInit(main: Main): void {
     // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
 }
 
-lineaColor(){
-    
-}
+// lineaColor(){
+
+// }
 
 }

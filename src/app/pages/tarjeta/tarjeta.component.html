@@ -1,31 +1,45 @@
 <div *ngIf="portafolioService.proyect === 'Todo'">
-    <ul class="portfolio-items shuffle " *ngFor="let proyecto of portafolioService.proyectos ; let i=index">
-        <li class="col-md-3" data-groups='["web","tech"]'>
-            <div class="inner">
-
-
-                <img src="{{proyecto['imagenUrl']}}">
-
-                <div class="overlay">
-
-                    <a (click)="openDialog(proyecto)" class="view-project">
-                                                Ver Proyecto
-                                            </a>
-                </div>
+    <ul class="portfolio-items shuffle list-unstyled row">
+      <li *ngFor="let proyecto of portafolioService.proyectos; let i = index"
+          [attr.data-groups]="['tech']"
+          class="shuffle-item filtered col-lg-3 col-sm-12">
+        <div class="inner">
+          <img [lazyLoad]="proyecto.imagenUrl"
+               alt="{{ proyecto.titulo }}"
+               class="img-fluid portfolio-image"  width="100%" height="45%" loading="lazy" /> <!-- Agrega una clase "portfolio-image" aquí -->
+          <div class="overlay">
+            <a (click)="openDialog(proyecto)" class="view-project">Ver Proyecto</a>
+            <!--project popup-->
+            <div [id]="'popup-' + (i + 1)" class="popup-box zoom-anim-dialog mfp-hide">
+              <figure>
+                <!--project popup image-->
+                <img [src]="proyecto.imagenUrl"
+                     alt="{{ proyecto.titulo }}"
+                     class="img-fluid popup-image" /> <!-- Agrega una clase "popup-image" aquí -->
+              </figure>
+              <div class="content">
+                <!--project popup title-->
+                <h4>{{ proyecto.titulo }}</h4>
+                <!--project popup description-->
+                <p>{{ proyecto.descripcion }}</p>
+              </div>
             </div>
-        </li>
-
+          </div>
+        </div>
+      </li>
     </ul>
+
 </div>
 
 <div *ngIf="!portafolioService.proyectos" class="row about-block">
-    <div class="col-md-12 ">
-        <div class="alert" role="alert ">
-            <h4 class="about-block "></h4>
-            <h4>Por el momento no he subido proyectos de: {{portafolioService.termino}} 🥺😅</h4>
-            <p class="mb-0 "></p>
-        </div>
-
+  <div class="col-md-12">
+    <div class="alert" role="alert ">
+      <h4 class="about-block"></h4>
+      <h4>
+        Por el momento no he subido proyectos de:
+        {{ portafolioService.termino }} 🥺😅
+      </h4>
+      <p class="mb-0"></p>
     </div>
-
+  </div>
 </div>

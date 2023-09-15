@@ -5,6 +5,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { LazyLoadImageModule} from 'ng-lazyload-image';
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 
@@ -64,6 +65,7 @@ import { environment } from '../environments/environment';
     MatDialogModule,
     MatFormFieldModule,
     MatIconModule,
+    LazyLoadImageModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

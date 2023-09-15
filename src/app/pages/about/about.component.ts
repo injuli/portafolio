@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  downCurriculum(){
+  downCurriculum() {
     console.log('link');
   }
 

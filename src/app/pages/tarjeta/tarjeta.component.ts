@@ -13,7 +13,7 @@ export class TarjetaComponent {
   @Output() proyectoSeleccionado: EventEmitter<boolean>;
   mostrar: boolean | any;
 
-  constructor(public portafolioService: PortafolioService, public dialog: MatDialog) { 
+  constructor(public portafolioService: PortafolioService, public dialog: MatDialog) {
 
   }
 
@@ -45,5 +45,4 @@ export class DialogElementsExampleDialog {
   onNoClick(): void {
     this.dialogRef.close();
   }
-
 }
